@@ -25,13 +25,13 @@ export default function ShowStudent() {
     const [studentsList, setStudentList] = useState([])
 
     const deleteStudent = (id) => {
-        axios.delete(`https://ancient-bastion-13010.herokuapp.com/students/${id}`).then(() => {
+        axios.delete(`http://localhost:5000/students/${id}`).then(() => {
             window.location.reload(false);
         })
     }
 
     useEffect(() => {
-        axios.get('https://ancient-bastion-13010.herokuapp.com/students').then((allStudents) => {
+        axios.get('http://localhost:5000/students').then((allStudents) => {
             setStudentList(allStudents.data);
         })
     }, [])
