@@ -45,7 +45,7 @@ export default function ShowStudent() {
                             <TableCell>Name</TableCell>
                             <TableCell align="right">Reg.No</TableCell>
                             <TableCell align="right">Grade</TableCell>
-                            <TableCell align="right">Subject</TableCell>
+                            <TableCell align="right">Section</TableCell>
                             <TableCell align="right">Action</TableCell>
                         
 
