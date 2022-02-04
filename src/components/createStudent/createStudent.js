@@ -22,7 +22,7 @@ export default function Create() {
         regNo: '',
         studentName: '',
         grade: '',
-        Subject: '',
+        section: '',
     })
 
     const createStudent = () => {
