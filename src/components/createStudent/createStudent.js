@@ -26,12 +26,14 @@ export default function Create() {
     })
 
     const createStudent = () => {
+      console.log(student);
         console.log('hello');
-        axios.post('https://ancient-bastion-13010.herokuapp.com/students', student).then( ()=> {
+        axios.post('http://localhost:5000/students', student).then( ()=> {
             // window.location.reload(false);
         })
-        console.log(student)
+
     }
+
   return (
       <>
       <h2>Create Student</h2>
@@ -49,8 +51,9 @@ export default function Create() {
           setStudent({ ...student, section: event.target.value})
         }}/>
         
-        <button variant="contained" color="primary" onClick={createStudent}>Create</button>
+        <button type ="submit" variant="contained" color="primary" onClick={createStudent}>Create</button>
         </form>
     </>
   );
+  
 }
