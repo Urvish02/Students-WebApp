@@ -45,8 +45,8 @@ export default function Create() {
         <TextField id="outlined-basic" label="Grade" variant="outlined" value={student.grade} onChange={(event)=> {
           setStudent({ ...student, grade: event.target.value})
         }}/>
-        <TextField id="outlined-basic" label="Subject" variant="outlined" value={student.Subject} onChange={(event)=> {
-          setStudent({ ...student, Subject: event.target.value})
+        <TextField id="outlined-basic" label="Section" variant="outlined" value={student.section} onChange={(event)=> {
+          setStudent({ ...student, section: event.target.value})
         }}/>
         
         <button variant="contained" color="primary" onClick={createStudent}>Create</button>
